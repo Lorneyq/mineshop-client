@@ -1,0 +1,56 @@
+.NotFound {
+	@apply flex flex-col items-center my-[200px];
+
+	@media (max-width: 960px) {
+		@apply my-[100px];
+	}
+
+	@media (max-width: 580px) {
+		@apply my-[60px];
+	}
+
+	img {
+		@apply w-[450px] h-[200px];
+
+		@media (max-width: 1386px) {
+			@apply w-[300px] h-[120px];
+		}
+
+		@media (max-width: 960px) {
+			@apply w-[230px] h-[95px];
+		}
+
+		@media (max-width: 580px) {
+			@apply w-[180px] h-[75px];
+		}
+	}
+}
+
+.Message {
+	@apply my-[40px];
+	p {
+		@apply text-5xl text-center;
+	}
+
+	@media (max-width: 1386px) {
+		@apply my-[20px];
+
+		p {
+			@apply text-[36px];
+		}
+	}
+
+	@media (max-width: 1386px) {
+		@apply my-[10px];
+
+		p {
+			@apply text-[24px];
+		}
+	}
+
+	@media (max-width: 580px) {
+		p {
+			@apply text-[16px];
+		}
+	}
+}

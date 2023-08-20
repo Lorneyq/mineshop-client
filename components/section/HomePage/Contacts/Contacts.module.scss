@@ -1,0 +1,39 @@
+.Contacts {
+	@apply mt-[240px] mb-[170px];
+
+	@media (max-width: 1200px) {
+		@apply mt-[110px] mb-[100px];
+	}
+
+	@media (max-width: 768px) {
+		@apply mt-[50px] mb-[60px];
+	}
+}
+
+.ContactsInner {
+	@apply flex items-center gap-[60px] justify-between;
+}
+
+.InfoBox {
+	@apply flex flex-col gap-[64px] text-5xl font-bold uppercase;
+
+	@media (max-width: 1200px) {
+		@apply gap-10;
+	}
+
+	@media (max-width: 768px) {
+		@apply text-[30px] gap-[30px];
+	}
+
+	@media (max-width: 480px) {
+		@apply text-[22px] gap-[20px];
+	}
+}
+
+.ContactsImage {
+	@apply w-[600px] h-[500px];
+
+	@media (max-width: 1024px) {
+		@apply hidden;
+	}
+}

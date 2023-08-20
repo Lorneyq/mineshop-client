@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+}
+
+html,
+body {
+	font-size: 16px;
+	font-family: Neue Machina, sans-serif;
+	font-weight: 400;
+	height: 100dvh;
+
+	@media (max-width: 768px) {
+		font-size: 14px;
+	}
+
+	@media (max-width: 580px) {
+		font-size: 12px;
+	}
+}
+
+main {
+	flex: 1 1 auto;
+	overflow-x: hidden;
+	padding-top: 76px;
+
+	@media (max-width: 768px) {
+		padding-top: 60px;
+	}
+
+	@media (max-width: 580px) {
+		padding-top: 40px;
+	}
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	max-width: 1470px;
+	padding: 0 15px;
+	margin: 0 auto;
+
+	@media (max-width: 768px) {
+		padding: 0 10px;
+	}
+}
+
+.container-fluid {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+*::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+	background-color: #000;
+}
+
+img {
+	user-select: none;
+}
+
+.selected {
+	background-color: #b13131 !important;
+}
+
+.selected-flag {
+	@media (max-width: 1200px) {
+		padding: 0 !important;
+	}
+}
+
+.arrow {
+	@media (max-width: 1200px) {
+		@apply hidden;
+	}
+}

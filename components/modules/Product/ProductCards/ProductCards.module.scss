@@ -1,0 +1,43 @@
+.ProductCards {
+	@apply grid grid-cols-3 gap-[60px];
+
+	@media (max-width: 1386px) {
+		@apply gap-10;
+	}
+
+	@media (max-width: 1200px) {
+		@apply gap-[30px];
+	}
+
+	@media (max-width: 960px) {
+		@apply grid-cols-2 gap-5;
+	}
+
+	@media (max-width: 480px) {
+		@apply gap-x-3 gap-y-5;
+	}
+
+	@media (max-width: 420px) {
+		@apply grid-cols-1;
+	}
+}
+
+.ProductsRow {
+	@apply grid grid-cols-3 gap-10;
+
+	@media (max-width: 1200px) {
+		@apply gap-[30px];
+	}
+
+	@media (max-width: 960px) {
+		@apply grid-cols-2 gap-5;
+	}
+
+	@media (max-width: 480px) {
+		@apply gap-x-3 gap-y-5;
+	}
+
+	@media (max-width: 420px) {
+		@apply grid-cols-1;
+	}
+}

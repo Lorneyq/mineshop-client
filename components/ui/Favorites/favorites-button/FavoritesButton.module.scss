@@ -1,0 +1,27 @@
+.FavoritesButton {
+	svg {
+		@apply w-5 h-5;
+	}
+
+	@media (max-width: 1024px) {
+		svg {
+			@apply w-7 h-7;
+		}
+	}
+}
+
+.IconBox {
+	@apply relative;
+}
+
+.TotalItem {
+	@apply absolute text-white text-left text-[13px] w-[38px] top-[-14px] right-[-38px];
+
+	@media (max-width: 1024px) {
+		@apply top-[-11px] right-[-38px];
+	}
+
+	@media (max-width: 768px) {
+		@apply text-[10px] top-[-11px] right-[-38px];
+	}
+}

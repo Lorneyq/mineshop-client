@@ -1,0 +1,107 @@
+.ProductCard {
+	@apply flex flex-col relative border border-black max-w-[440px] max-h-[453px];
+}
+
+.ProductCardTop {
+	@apply relative h-[382px] w-[440px];
+
+	.ProductImage {
+		@apply flex h-full p-[55px];
+
+		img {
+			@apply max-w-full max-h-full m-auto;
+		}
+	}
+
+	.favoriteButton {
+		@apply absolute left-5 bottom-3;
+	}
+
+	.cartButton {
+		@apply absolute right-5 bottom-3;
+	}
+
+	@media (max-width: 1386px) {
+		@apply h-[350px] w-full;
+	}
+
+	@media (max-width: 1200px) {
+		@apply h-[300px];
+
+		.ProductImage {
+			@apply p-[45px];
+		}
+
+		.favoriteButton {
+			@apply left-3 bottom-2;
+		}
+
+		.cartButton {
+			@apply right-3 bottom-2;
+		}
+	}
+
+	@media (max-width: 600px) {
+		@apply h-[220px];
+
+		.ProductImage {
+			@apply p-[30px];
+		}
+
+		.favoriteButton {
+			@apply left-3 bottom-2;
+		}
+
+		.cartButton {
+			@apply right-3 bottom-2;
+		}
+	}
+}
+
+.ProductCardBottom {
+	@apply flex items-center justify-between gap-[15px] px-5 py-[18px] border-t border-black;
+
+	.productName {
+		@apply text-lg max-w-[300px] whitespace-nowrap overflow-ellipsis overflow-hidden;
+	}
+	.oldPrice {
+		@apply text-lg pr-[10px];
+	}
+	.price {
+		@apply text-2xl font-bold;
+	}
+
+	@media (max-width: 1386px) {
+		@apply px-[10px] py-3;
+
+		.productName {
+			@apply text-base max-w-[270px];
+		}
+	}
+
+	@media (max-width: 1200px) {
+		.oldPrice {
+			@apply text-base pr-[6px];
+		}
+
+		.price {
+			@apply text-xl;
+		}
+	}
+
+	@media (max-width: 600px) {
+		@apply p-[6px];
+
+		.oldPrice {
+			@apply text-xs pr-[3px];
+		}
+
+		.price {
+			@apply text-sm;
+		}
+
+		.productName {
+			@apply text-xs max-w-[200px];
+		}
+	}
+}

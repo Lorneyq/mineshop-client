@@ -1,0 +1,26 @@
+.Breadcrumbs {
+	@apply flex font-light mt-[20px] mb-[30px];
+
+	@media (max-width: 768px) {
+		@apply my-[15px];
+	}
+
+	@media (max-width: 580px) {
+		@apply my-[10px];
+	}
+}
+
+.BreadcrumbsItem {
+	@apply first:ml-[-11px];
+	a {
+		@apply pr-[11px] pl-[11px];
+	}
+}
+
+.BreadcrumbsLastItem {
+	@apply pl-[11px];
+}
+
+.BreadcrumbsSeparator {
+	@apply cursor-pointer select-none;
+}

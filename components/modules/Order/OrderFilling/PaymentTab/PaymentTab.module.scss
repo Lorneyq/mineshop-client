@@ -1,0 +1,14 @@
+.CardNumberInput {
+	grid-column: 1 / 3;
+	grid-row: 1;
+}
+
+.ExpirationDateInput {
+	grid-column: 1 / 2;
+	grid-row: 2;
+}
+
+.CVCInput {
+	grid-column: 2 / 3;
+	grid-row: 2;
+}

@@ -1,0 +1,31 @@
+.Header {
+	@apply bg-black fixed top-0 left-0 right-0 z-40;
+}
+
+.HeaderInner {
+	@apply flex items-center justify-between relative h-[76px];
+
+	@media (max-width: 768px) {
+		@apply h-[60px];
+	}
+
+	@media (max-width: 580px) {
+		@apply h-[40px];
+	}
+}
+
+.navbar {
+	ul {
+		@apply flex gap-[60px] text-white;
+	}
+
+	@media (max-width: 1386px) {
+		ul {
+			@apply gap-10;
+		}
+	}
+}
+
+.buttons {
+	@apply flex gap-[43px];
+}

@@ -1,0 +1,56 @@
+.Label {
+	@apply relative flex flex-col justify-end;
+}
+
+.Input {
+	@apply border-b border-white text-white py-[10px] w-full bg-transparent outline-none;
+
+	&::placeholder {
+		@apply text-[#a1a1a1];
+	}
+
+	@media (max-width: 1200px) {
+		@apply text-sm py-[5px];
+	}
+}
+
+.ErrorAlert {
+	@apply absolute -bottom-6 text-red-500;
+}
+
+.Button {
+	@apply mt-2 bg-white border border-black px-6 py-2 w-fit ml-auto;
+
+	transition: all 0.5s;
+
+	&:hover {
+		@apply bg-black text-white;
+	}
+}
+
+.PhoneDropdownButton {
+	border-radius: 0 !important;
+	background-color: transparent !important;
+	border: 1px solid white !important;
+	border-bottom: 0px !important;
+
+	div {
+		background-color: transparent !important;
+	}
+
+	@media (max-width: 1200px) {
+		border: 0 !important;
+	}
+}
+
+.CardNumberInput {
+	@apply relative;
+
+	input {
+		@apply pl-[30px];
+	}
+}
+
+.CardNumberIcon {
+	@apply absolute left-0 bottom-[15px];
+}

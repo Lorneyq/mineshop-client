@@ -1,34 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align='center'><img src='https://i.imgur.com/Pn7mwzl.jpg' alt='Mineshop'/></div>
 
-## Getting Started
+# Mineshop - Online Store
 
-First, run the development server:
+The client part of the Mineshop online store. A project with extensive
+functionality, database, products that can be added to cart or favorites,
+authorization - the store is as close as possible in complexity to the
+commercial version, the details are thought out.
+
+## Stack used
+
+» Next.js (Language: TypeScript) » Sass / SCSS » Libraries: tailwind, swiper,
+axios, effector, query-string, next-nprogress-bar, lottie-web
+
+## Project launch
+
+1. First things first,
+   [go to the server side,](https://github.com/Lorneyq/mineshop-server) and
+   start it up.
+2. Clone the project via git
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone https://github.com/Lorneyq/mineshop-client.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Once fully cloned, run the installation of all dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+5. After that, create an `.env` file, and write there the address of the server
+   part that was running earlier.
 
-## Learn More
+```bash
+NEXT_PUBLIC_SERVER_URL=YOUR_SERVER
+```
 
-To learn more about Next.js, take a look at the following resources:
+6. Run the client part in developer mode.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+yarn dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+That's it, the whole project is up and running. Congratulations!🎉🥳
 
-## Deploy on Vercel
+## See this project🎮
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+👉[Live demo](http://mineshop.vercel.app/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Mineshop demo](https://lorneyq.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmineshop.3af2407d.jpg&w=1920&q=75)

@@ -1,0 +1,14 @@
+.UserButton,
+.SignInButton {
+	@apply relative z-[41];
+
+	svg {
+		@apply w-[28px] h-[28px];
+	}
+
+	@media (max-width: 1024px) {
+		svg {
+			@apply w-7 h-7;
+		}
+	}
+}

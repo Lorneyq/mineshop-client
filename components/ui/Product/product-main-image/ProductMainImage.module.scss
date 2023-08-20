@@ -1,0 +1,25 @@
+.MainImageSlider {
+	width: 545px !important;
+	overflow: hidden !important;
+	position: initial !important;
+
+	@media (max-width: 1386px) {
+		width: 470px !important;
+	}
+
+	@media (max-width: 1200px) {
+		width: 380px !important;
+	}
+
+	@media (max-width: 960px) {
+		width: 300px !important;
+	}
+}
+
+.MainImageSlide {
+	@apply flex;
+
+	img {
+		@apply m-auto max-w-full max-h-full;
+	}
+}

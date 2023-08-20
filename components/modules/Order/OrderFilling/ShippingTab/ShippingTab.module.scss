@@ -1,0 +1,35 @@
+.ShippingMethods {
+	@apply flex flex-col gap-5 mb-[50px];
+
+	@media (max-width: 1386px) {
+		@apply gap-[15px] mb-[30px];
+	}
+
+	@media (max-width: 1200px) {
+		@apply gap-[10px] mb-[20px];
+	}
+}
+
+.ShippingMethod {
+	@apply flex justify-between font-light;
+
+	@media (max-width: 1200px) {
+		@apply text-sm;
+	}
+}
+
+.ShippingMethodChoice {
+	@apply flex items-center gap-4;
+
+	@media (max-width: 1200px) {
+		@apply gap-2;
+	}
+}
+
+.ShippingMethodName {
+	@apply pl-4;
+
+	@media (max-width: 1200px) {
+		@apply text-sm;
+	}
+}

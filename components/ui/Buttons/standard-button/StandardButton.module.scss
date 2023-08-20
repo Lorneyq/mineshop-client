@@ -1,0 +1,23 @@
+.StandardButton {
+	@apply inline-block text-lg text-center leading-none min-w-[189px] min-h-[49px] px-[15px] whitespace-nowrap select-none;
+
+	@media (max-width: 1200px) {
+		@apply text-base min-w-[160px] min-h-[44px];
+	}
+
+	@media (max-width: 768px) {
+		@apply text-xs min-w-[120px] min-h-[32px];
+	}
+
+	@media (max-width: 580px) {
+		@apply text-[10px] min-w-[90px] min-h-[25px];
+	}
+}
+
+.Black {
+	@apply text-white bg-black;
+}
+
+.White {
+	@apply text-black bg-white;
+}

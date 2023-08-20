@@ -1,0 +1,89 @@
+.AuthModule {
+	@apply block w-[600px] h-[450px] rounded-3xl bg-white z-[41];
+
+	position: absolute;
+	top: 50vh;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	@media (max-width: 1200px) {
+		@apply w-[400px] h-[345px];
+	}
+
+	@media (max-width: 1024px) {
+		left: 0%;
+		transform: translate(0%, -25dvh);
+	}
+
+	@media (max-width: 768px) {
+		@apply w-[370px] h-[315px];
+
+		left: -10%;
+	}
+
+	@media (max-width: 580px) {
+		@apply w-[330px] h-[265px];
+
+		left: -12%;
+	}
+
+	@media (max-width: 480px) {
+		left: -22.5%;
+	}
+
+	@media (max-width: 420px) {
+		@apply w-[280px] h-[260px];
+	}
+
+	@media (max-width: 360px) {
+		left: -30%;
+	}
+}
+
+.Box {
+	@apply mt-[70px];
+
+	@media (max-width: 1200px) {
+		@apply mt-[40px];
+	}
+
+	@media (max-width: 580px) {
+		@apply mt-[30px];
+	}
+}
+
+.Title {
+	@apply block text-center text-3xl mb-[25px];
+
+	@media (max-width: 1200px) {
+		@apply text-[26px] mb-[10px];
+	}
+
+	@media (max-width: 580px) {
+		@apply text-[20px];
+	}
+}
+
+.Form {
+	@apply flex flex-col gap-7 items-center;
+
+	@media (max-width: 1200px) {
+		@apply gap-5;
+	}
+}
+
+.SwitchForm {
+	@apply bottom-5 border-b border-black;
+
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+
+	@media (max-width: 1200px) {
+		@apply bottom-4;
+	}
+
+	@media (max-width: 420px) {
+		@apply bottom-3;
+	}
+}

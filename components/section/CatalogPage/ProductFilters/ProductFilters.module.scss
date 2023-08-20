@@ -1,0 +1,61 @@
+.ProductFilters {
+	@apply mt-[40px];
+
+	@media (max-width: 1200px) {
+		@apply mt-[20px];
+	}
+
+	@media (max-width: 768px) {
+		@apply mt-0;
+	}
+}
+
+.Title {
+	@apply text-center text-[50px] font-black uppercase mb-[27px];
+
+	font-family: Druk Text Wide Cyr, sans-serif;
+
+	@media (max-width: 1200px) {
+		@apply text-[44px] mb-[10px];
+	}
+
+	@media (max-width: 768px) {
+		@apply text-[32px] mb-0;
+	}
+
+	@media (max-width: 580px) {
+		@apply text-[28px];
+	}
+
+	@media (max-width: 380px) {
+		@apply text-[20px];
+	}
+}
+
+.Filters {
+	@apply flex items-center justify-between;
+}
+
+.TotalProducts {
+	@apply text-base;
+
+	@media (max-width: 480px) {
+		@apply text-xs;
+	}
+}
+
+.Subcategory {
+	@apply flex gap-[55px] text-xl;
+
+	@media (max-width: 1200px) {
+		@apply gap-[30px] text-lg;
+	}
+
+	@media (max-width: 768px) {
+		@apply gap-5;
+	}
+
+	@media (max-width: 480px) {
+		@apply gap-2 text-sm;
+	}
+}

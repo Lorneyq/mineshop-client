@@ -1,0 +1,98 @@
+.CartItemsBox {
+	@apply mt-[50px] mb-[130px];
+
+	@media (max-width: 1200px) {
+		@apply mt-[30px] mb-[100px];
+	}
+
+	@media (max-width: 768px) {
+		@apply mt-[10px] mb-[60px];
+	}
+}
+
+.CartItemList {
+	@apply mb-[60px];
+
+	@media (max-width: 960px) {
+		@apply mb-[30px];
+	}
+}
+
+.BoxTop {
+	@apply grid gap-0 pb-5 border-b border-black text-lg font-light;
+	grid-template-columns: repeat(12, 1fr);
+
+	span {
+		&:nth-child(1) {
+			grid-column: 1/4;
+		}
+		&:nth-child(2) {
+			grid-column: 7/8;
+			text-align: center;
+		}
+		&:nth-child(3) {
+			grid-column: 10/10;
+			text-align: center;
+		}
+		&:nth-child(4) {
+			grid-column: 12/12;
+			text-align: right;
+		}
+	}
+
+	@media (max-width: 768px) {
+		@apply text-[12px] pb-[10px];
+	}
+}
+
+.CartItemsBoxBottom {
+	@apply flex justify-between items-center;
+
+	@media (max-width: 580px) {
+		@apply items-end;
+	}
+}
+
+.Checkout {
+	@apply flex items-center gap-[35px];
+
+	@media (max-width: 960px) {
+		@apply gap-[20px];
+	}
+
+	@media (max-width: 580px) {
+		@apply gap-[10px] flex-col;
+	}
+}
+
+.TotalPrice {
+	@apply text-lg;
+
+	> span {
+		@apply text-2xl font-bold pl-[5px];
+	}
+
+	@media (max-width: 960px) {
+		@apply text-[16px];
+
+		> span {
+			@apply text-[20px];
+		}
+	}
+
+	@media (max-width: 580px) {
+		@apply text-[14px];
+
+		> span {
+			@apply text-[16px];
+		}
+	}
+
+	@media (max-width: 420px) {
+		@apply text-[12px] pl-[2px];
+
+		> span {
+			@apply text-[14px];
+		}
+	}
+}

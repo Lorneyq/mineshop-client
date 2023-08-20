@@ -1,0 +1,11 @@
+.LogoutButton {
+	@apply max-w-[200px];
+
+	@media (max-width: 768px) {
+		@apply max-w-[150px];
+	}
+
+	@media (max-width: 580px) {
+		@apply max-w-[120px];
+	}
+}

@@ -1,0 +1,7 @@
+.SortSelect {
+	@apply flex items-center gap-2 text-lg font-light;
+
+	@media (max-width: 1200px) {
+		@apply text-base;
+	}
+}

@@ -1,0 +1,38 @@
+.ArrowLink {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) rotate(45deg);
+		width: 20px;
+		height: 20px;
+		border-top: 2px solid #fff;
+		border-right: 2px solid #fff;
+		transition: all 0.2s ease-in-out;
+		&:hover {
+			animation: ArrowLink 0.5s infinite alternate;
+		}
+	}
+
+	svg {
+		@media (max-width: 768px) {
+			@apply w-[100px];
+		}
+
+		@media (max-width: 580px) {
+			@apply w-20;
+		}
+	}
+}
+
+@keyframes ArrowLink {
+	0% {
+		transform: translate(-50%, -50%) rotate(45deg) translateX(0);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(45deg) translateX(10px);
+	}
+}

@@ -1,0 +1,44 @@
+.ProductMark {
+	@apply absolute top-0 right-5 select-none;
+
+	> span {
+		@apply uppercase text-[15px] font-bold text-white;
+
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	@media (max-width: 1386px) {
+		> span {
+			@apply uppercase text-sm;
+		}
+		svg {
+			@apply w-[50px] h-[50px];
+		}
+	}
+
+	@media (max-width: 1200px) {
+		@apply right-3;
+
+		> span {
+			@apply text-xs;
+		}
+		svg {
+			@apply w-[40px] h-[40px];
+		}
+	}
+
+	@media (max-width: 600px) {
+		@apply right-3;
+
+		> span {
+			@apply text-[10px];
+		}
+
+		svg {
+			@apply w-[30px] h-[30px];
+		}
+	}
+}

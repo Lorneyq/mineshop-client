@@ -1,0 +1,16 @@
+.CatalogCards {
+	@apply grid gap-[30px] pt-[50px] pb-[130px];
+	grid-template-columns: repeat(2, 1fr);
+
+	@media (max-width: 1386px) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	@media (max-width: 768px) {
+		@apply pt-8 pb-20 gap-[20px];
+	}
+
+	@media (max-width: 580px) {
+		@apply pt-8 pb-16;
+	}
+}

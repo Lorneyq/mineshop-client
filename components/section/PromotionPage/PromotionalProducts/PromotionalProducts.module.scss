@@ -1,0 +1,11 @@
+.PromotionalProducts {
+	@apply mt-[70px] mb-[140px];
+
+	@media (max-width: 1200px) {
+		@apply mt-[40px] mb-[60px];
+	}
+
+	@media (max-width: 580px) {
+		@apply mt-[20px] mb-[20px];
+	}
+}

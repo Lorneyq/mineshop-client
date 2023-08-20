@@ -1,0 +1,82 @@
+.Dashboard {
+	@apply my-[50px] bg-black text-white p-[50px] inline-block;
+
+	@media (max-width: 1200px) {
+		@apply p-[30px];
+	}
+
+	@media (max-width: 768px) {
+		@apply my-[30px];
+	}
+
+	@media (max-width: 580px) {
+		@apply w-full p-[10px] my-[20px];
+	}
+}
+
+.DashboardTabs {
+	@apply flex gap-[40px] relative;
+
+	@media (max-width: 1200px) {
+		@apply gap-[30px];
+	}
+
+	@media (max-width: 580px) {
+		@apply gap-[20px];
+	}
+}
+
+.DashboardTabList {
+	@apply flex flex-col gap-[10px];
+}
+
+.DashboardTab {
+	@apply cursor-pointer w-[170px] overflow-hidden whitespace-nowrap overflow-ellipsis select-none p-[10px] border border-white;
+
+	@media (max-width: 768px) {
+		@apply w-[150px] p-[5px];
+	}
+
+	@media (max-width: 580px) {
+		@apply w-[100px] text-[10px];
+	}
+}
+
+.SelectedDashboardTab {
+	@apply w-[200px];
+
+	@media (max-width: 768px) {
+		@apply w-[170px];
+	}
+
+	@media (max-width: 580px) {
+		@apply w-[120px];
+	}
+}
+
+.UserInfoBox {
+	@apply flex flex-col gap-[40px];
+
+	@media (max-width: 768px) {
+		@apply gap-[20px];
+	}
+
+	@media (max-width: 580px) {
+		@apply gap-[10px];
+	}
+}
+
+.UserInfo {
+	@apply relative right-0 flex flex-col gap-[10px] max-w-[400px] overflow-hidden whitespace-nowrap text-ellipsis;
+
+	@media (max-width: 768px) {
+		@apply max-w-[250px];
+	}
+
+	@media (max-width: 580px) {
+		@apply max-w-[180px] gap-[5px] text-[10px];
+	}
+}
+
+.DashboardTabPanel {
+}

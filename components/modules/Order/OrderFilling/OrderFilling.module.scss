@@ -1,0 +1,107 @@
+.OrderFilling {
+	@apply bg-black px-[100px] py-[75px] min-h-[750px] w-full text-white;
+
+	@media (max-width: 1386px) {
+		@apply px-[50px] py-[30px] min-h-[600px];
+	}
+
+	@media (max-width: 1200px) {
+		@apply w-[500px] px-[30px] min-h-[480px];
+	}
+
+	@media (max-width: 960px) {
+		@apply w-[440px];
+	}
+
+	@media (max-width: 580px) {
+		@apply w-full min-h-[350px] p-[20px];
+	}
+
+	@media (max-width: 420px) {
+		@apply w-full min-h-[300px] p-[20px];
+	}
+}
+
+.FillingTabList {
+	@apply flex items-center gap-[15px];
+
+	@media (max-width: 1200px) {
+		@apply gap-[10px];
+	}
+
+	@media (max-width: 420px) {
+		@apply gap-[5px];
+	}
+}
+
+.FillingTab {
+	@apply text-lg font-light cursor-pointer outline-none;
+
+	@media (max-width: 1200px) {
+		@apply text-[14px];
+	}
+
+	@media (max-width: 420px) {
+		@apply text-[10px];
+	}
+}
+
+.SelectedFillingTab {
+	@apply font-bold;
+}
+
+.FillingTabPanel {
+	@apply mt-[60px];
+
+	@media (max-width: 1386px) {
+		@apply mt-[40px];
+	}
+
+	@media (max-width: 1200px) {
+		@apply mt-[20px];
+	}
+
+	@media (max-width: 420px) {
+		@apply mt-[10px];
+	}
+}
+
+.OrderForm {
+	@apply grid grid-cols-2 gap-y-[50px] gap-x-[80px] mb-[50px];
+
+	@media (max-width: 1386px) {
+		@apply gap-y-[40px] gap-x-[50px] mb-[30px];
+	}
+
+	@media (max-width: 1200px) {
+		@apply gap-y-[25px] gap-x-[20px];
+	}
+}
+
+.FillingTitle {
+	@apply text-2xl font-light uppercase mb-[30px];
+
+	@media (max-width: 1386px) {
+		@apply text-[20px] mb-[15px];
+	}
+
+	@media (max-width: 960px) {
+		@apply text-[16px] mb-[5px];
+	}
+
+	@media (max-width: 420px) {
+		@apply text-[12px] mb-[2px];
+	}
+}
+
+.FillingButtons {
+	@apply flex items-center justify-between;
+}
+
+.FillingPrevButton {
+	@apply text-lg underline;
+
+	@media (max-width: 1386px) {
+		@apply text-base;
+	}
+}

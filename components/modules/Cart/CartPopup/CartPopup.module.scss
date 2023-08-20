@@ -1,0 +1,98 @@
+.CartPopup {
+	@apply absolute left-[-300px] w-[300px] bg-[#f2f2f2] p-[10px];
+}
+.Title {
+	@apply text-2xl mb-[10px];
+}
+
+.CartItemList {
+	@apply border-y border-black min-h-[163px] max-h-[327px] overflow-auto pr-[10px];
+
+	&::-webkit-scrollbar {
+		width: 2px;
+		height: 2px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: #cbc6c6;
+		border-radius: 8px;
+	}
+}
+
+.CartItem {
+	@apply relative flex flex-col py-[10px] border-b border-black last:border-0;
+}
+
+.CartItemTop {
+	@apply flex;
+
+	a {
+		@apply contents;
+	}
+}
+
+.CartItemImage {
+	@apply w-[100px] h-[100px];
+}
+
+.CartItemName {
+	@apply pl-[15px] mr-[25px] max-h-[100px] overflow-hidden;
+}
+
+.CartItemBottom {
+	@apply flex justify-between mt-[10px];
+}
+
+.EmptyText {
+	@apply flex items-center text-gray-400;
+}
+
+.ItemCounter {
+	@apply border border-black text-xl;
+
+	span {
+		@apply select-none px-[5px] w-[52px] h-full text-center inline-block;
+	}
+
+	button {
+		@apply border-black px-[5px] h-full;
+
+		&:nth-child(1) {
+			@apply border-r;
+		}
+
+		&:nth-child(3) {
+			@apply border-l;
+		}
+	}
+}
+
+.RemoveButton {
+	@apply absolute top-[10px] right-0;
+
+	svg {
+		@apply w-[10px] h-[10px];
+	}
+}
+
+.CartItemPrice {
+	@apply justify-end text-2xl;
+}
+
+.TotalPrice {
+	@apply flex justify-between mt-[10px] mb-[20px];
+}
+
+.CheckoutButton,
+.DisabledCheckoutButton {
+	@apply w-full;
+}
+
+.DisabledCheckoutButton {
+	@apply cursor-not-allowed;
+
+	background-color: #939393 !important;
+}

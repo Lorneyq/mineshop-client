@@ -1,0 +1,51 @@
+.Box {
+	@apply p-8 border border-black;
+
+	@media (max-width: 1200px) {
+		@apply p-[20px];
+	}
+
+	@media (max-width: 768px) {
+		@apply p-[10px];
+	}
+
+	@media (max-width: 420px) {
+		@apply p-[5px];
+	}
+}
+
+.FeedbackForm {
+	@apply flex flex-col gap-7 w-[400px];
+
+	@media (max-width: 1200px) {
+		@apply w-[350px];
+	}
+
+	@media (max-width: 580px) {
+		@apply w-[300px] gap-5 py-[4px] px-[7px];
+	}
+
+	@media (max-width: 420px) {
+		@apply w-[260px] py-[4px] px-[7px];
+	}
+}
+
+.Title {
+	@apply text-4xl border-b border-gray-300 mb-5;
+
+	@media (max-width: 1200px) {
+		@apply text-[24px] mb-[15px];
+	}
+
+	@media (max-width: 768px) {
+		@apply text-[20px] mb-[10px];
+	}
+
+	@media (max-width: 580px) {
+		@apply text-[18px];
+	}
+
+	@media (max-width: 420px) {
+		@apply text-[16px] mb-[5px];
+	}
+}

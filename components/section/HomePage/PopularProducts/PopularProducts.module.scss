@@ -1,0 +1,11 @@
+.PopularProducts {
+	@apply mt-[250px];
+
+	@media (max-width: 1200px) {
+		@apply mt-[110px];
+	}
+
+	@media (max-width: 768px) {
+		@apply mt-[60px];
+	}
+}

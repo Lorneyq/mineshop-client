@@ -1,0 +1,19 @@
+.Marquee {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.Marquee span {
+	display: inline-block;
+	padding-left: 100%;
+	animation: marquee 50s linear infinite;
+}
+
+@keyframes marquee {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}

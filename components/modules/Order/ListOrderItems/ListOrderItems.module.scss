@@ -1,0 +1,99 @@
+.ListOrderItems {
+	@apply max-w-[600px] w-full;
+}
+
+.TotalProducts {
+	@apply block text-lg font-light mb-[10px];
+
+	@media (max-width: 768px) {
+		@apply text-[12px] mb-[5px];
+	}
+}
+
+.OrderList {
+	@apply h-[486px] overflow-auto pr-10;
+
+	&::-webkit-scrollbar {
+		width: 5px;
+		height: 5px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: #dfdfdf;
+		border-radius: 50px;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: black;
+		border-radius: 50px;
+	}
+
+	@media (max-width: 1386px) {
+		@apply pr-[20px];
+
+		&::-webkit-scrollbar {
+			width: 3px;
+			height: 3px;
+		}
+	}
+
+	@media (max-width: 1200px) {
+		@apply h-[342px];
+	}
+
+	@media (max-width: 960px) {
+		@apply h-[286px];
+	}
+
+	@media (max-width: 580px) {
+		@apply h-[243px];
+	}
+}
+
+.OrderListBottom {
+	@apply pr-10;
+
+	@media (max-width: 1386px) {
+		@apply pr-[20px];
+	}
+}
+
+.AdditionalCosts {
+	@apply flex flex-col items-end gap-[10px] py-[20px] text-lg border-y border-black;
+
+	@media (max-width: 1386px) {
+		@apply gap-[5px] text-base py-[10px];
+	}
+}
+
+.shippingValue,
+.discountValue {
+	@apply inline-block pl-[5px] min-w-[60px] text-right;
+
+	@media (max-width: 768px) {
+		@apply min-w-[20px];
+	}
+}
+
+.TotalPrice {
+	@apply flex justify-end items-center text-lg mt-[20px];
+
+	> span {
+		@apply text-4xl font-bold pl-[30px];
+	}
+
+	@media (max-width: 1386px) {
+		@apply text-[16px] mt-[10px];
+
+		> span {
+			@apply text-[24px] pl-[10px];
+		}
+	}
+
+	@media (max-width: 1200px) {
+		@apply text-[16px] mt-[10px];
+
+		> span {
+			@apply text-[20px] pl-[10px];
+		}
+	}
+}

@@ -1,0 +1,15 @@
+.ImageItem {
+	@apply flex w-20 h-20 cursor-pointer border border-black p-2;
+
+	> img {
+		@apply max-w-full max-h-full m-auto;
+	}
+
+	@media (max-width: 1376px) {
+		@apply w-[70px] h-[70px] p-[5px];
+	}
+
+	@media (max-width: 1200px) {
+		@apply w-[60px] h-[60px] p-[4px];
+	}
+}

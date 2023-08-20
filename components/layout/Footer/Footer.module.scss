@@ -1,0 +1,27 @@
+.Footer {
+	background-color: black;
+}
+
+.FooterInner {
+	@apply flex justify-between pt-[70px] pb-[15px];
+
+	li,
+	span {
+		@apply max-w-[200px] overflow-hidden whitespace-nowrap text-ellipsis;
+	}
+
+	ul {
+		@apply flex flex-col gap-5 text-white;
+		> span {
+			@apply font-bold uppercase;
+		}
+	}
+
+	@media (max-width: 1200px) {
+		@apply px-[15px];
+	}
+}
+
+.FooterCopy {
+	@apply mt-[110px];
+}

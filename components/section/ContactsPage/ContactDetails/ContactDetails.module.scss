@@ -1,0 +1,17 @@
+.ContactDetails {
+	@apply border border-black p-8 flex flex-col w-fit;
+
+	// box-shadow: 2px 2px 45px -2px rgba(0, 0, 0, 1);
+
+	> img {
+		margin: 0 auto;
+	}
+}
+
+.Title {
+	@apply text-4xl border-b border-gray-300 mb-5;
+}
+
+.InfoBox {
+	@apply flex flex-col gap-[15px] text-3xl font-normal uppercase mt-6;
+}

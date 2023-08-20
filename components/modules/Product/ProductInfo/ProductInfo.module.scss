@@ -1,0 +1,182 @@
+.ProductInfo {
+	@apply flex flex-col w-[700px] text-lg leading-normal;
+
+	@media (max-width: 1386px) {
+		@apply text-[16px];
+	}
+
+	@media (max-width: 1200px) {
+		@apply text-[14px];
+	}
+
+	@media (max-width: 768px) {
+		@apply w-full;
+	}
+}
+
+.ProductName {
+	@apply text-5xl font-black mb-[37px] max-h-[200px] overflow-hidden;
+
+	font-family: Druk Text Wide Cyr, sans-serif;
+
+	@media (max-width: 1386px) {
+		@apply text-4xl mb-[20px];
+	}
+}
+
+.ProductSubinfo {
+	@apply flex justify-between mb-[35px];
+
+	@media (max-width: 1386px) {
+		@apply mb-[20px];
+	}
+
+	@media (max-width: 1200px) {
+		@apply mb-[15px];
+	}
+}
+
+.Article {
+	@apply font-light;
+}
+
+.ProductColor,
+.ProductSize {
+	@apply flex uppercase;
+}
+
+.ProductColor {
+	@apply items-center gap-4 my-[35px];
+
+	.colorBlock {
+		@apply block w-4 h-4;
+	}
+
+	@media (max-width: 1386px) {
+		@apply gap-[15px] my-[20px];
+	}
+
+	@media (max-width: 1200px) {
+		@apply my-[15px];
+	}
+}
+
+.ProductSize {
+	@apply gap-[30px] mb-5;
+
+	.sizeBlock {
+		@apply px-2 border border-black select-none;
+	}
+
+	@media (max-width: 1376px) {
+		@apply gap-[15px] mb-[15px];
+	}
+}
+
+.ProductInteractive {
+	@apply flex justify-between items-center mt-[35px];
+
+	@media (max-width: 1386px) {
+		@apply mt-[20px];
+	}
+
+	@media (max-width: 1200px) {
+		@apply mt-[15px];
+	}
+
+	@media (max-width: 768px) {
+		@apply mt-[10px];
+	}
+}
+
+.Buttons {
+	@apply flex gap-[45px] items-center;
+
+	@media (max-width: 1386px) {
+		@apply gap-[20px];
+	}
+}
+
+.ItemCounter {
+	@apply min-w-[189px] h-[49px] bg-black text-white flex justify-center items-center text-2xl select-none;
+
+	span {
+		@apply w-[50px] text-center;
+	}
+
+	@media (max-width: 1200px) {
+		@apply text-base min-w-[160px] h-[44px];
+
+		span {
+			@apply w-[40px];
+		}
+	}
+
+	@media (max-width: 768px) {
+		@apply text-xs min-w-[120px] h-[32px];
+	}
+
+	@media (max-width: 580px) {
+		@apply text-[10px] min-w-[90px] h-[25px];
+	}
+}
+
+.ProductPrice {
+	@apply text-5xl font-bold;
+
+	@media (max-width: 1386px) {
+		@apply text-4xl;
+	}
+
+	@media (max-width: 1200px) {
+		@apply text-[30px];
+	}
+
+	@media (max-width: 580px) {
+		@apply text-[24px];
+	}
+}
+
+.oldProductPrice {
+	@apply text-3xl pr-[10px];
+
+	@media (max-width: 1386px) {
+		@apply text-2xl;
+	}
+}
+
+.InfoTabs {
+	@apply mt-[70px];
+
+	@media (max-width: 1386px) {
+		@apply mt-[30px];
+	}
+
+	@media (max-width: 1200px) {
+		@apply mt-[20px];
+	}
+}
+
+.InfoTabList {
+	@apply flex gap-[102px] mb-[25px];
+
+	@media (max-width: 1386px) {
+		@apply gap-[70px] mb-[15px];
+	}
+
+	@media (max-width: 1200px) {
+		@apply gap-[40px] mb-[10px];
+	}
+}
+
+.InfoTab {
+	@apply font-light uppercase cursor-pointer outline-none;
+}
+
+.SelectedInfoTab {
+	@apply border-b border-black;
+}
+
+.ProductDescription {
+	@apply font-light;
+}

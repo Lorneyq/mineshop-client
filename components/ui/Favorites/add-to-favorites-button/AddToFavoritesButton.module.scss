@@ -1,0 +1,26 @@
+.AddToFavoritesButton {
+	@media (max-width: 1200px) {
+		svg {
+			@apply w-[30px] h-[30px];
+		}
+	}
+
+	@media (max-width: 600px) {
+		svg {
+			@apply w-[20px] h-[20px];
+		}
+	}
+}
+
+.Heart {
+	path {
+		transition: fill 0.5s;
+	}
+	&:hover {
+		path {
+			&:nth-child(2) {
+				fill: black;
+			}
+		}
+	}
+}

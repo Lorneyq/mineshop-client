@@ -1,0 +1,11 @@
+.SearchBox {
+	@apply flex items-center;
+}
+
+.Buttons {
+	@apply relative flex items-center;
+}
+
+.CollapseButton {
+	@apply absolute -right-[36px] -top-[7px] text-white text-[30px] leading-none;
+}

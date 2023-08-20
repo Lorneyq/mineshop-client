@@ -1,0 +1,27 @@
+.WarningMessageBox {
+	@apply flex flex-col items-center my-[150px];
+
+	@media (max-width: 768px) {
+		@apply my-[60px];
+	}
+
+	@media (max-width: 580px) {
+		@apply my-[40px];
+	}
+}
+
+.Message {
+	@apply block text-4xl text-center font-bold max-w-[760px] mb-[30px];
+
+	@media (max-width: 1200px) {
+		@apply max-w-[700px] mb-[20px];
+	}
+
+	@media (max-width: 768px) {
+		@apply text-[26px] leading-normal max-w-[500px] mb-[10px];
+	}
+
+	@media (max-width: 580px) {
+		@apply text-[16px] max-w-[300px] mb-[10px];
+	}
+}

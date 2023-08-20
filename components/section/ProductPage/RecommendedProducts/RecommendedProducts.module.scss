@@ -1,0 +1,33 @@
+.RecommendedProducts {
+	@apply mb-[140px];
+
+	@media (max-width: 1200px) {
+		@apply mb-[100px];
+	}
+
+	@media (max-width: 768px) {
+		@apply mb-[60px];
+	}
+
+	@media (max-width: 480px) {
+		@apply mb-[30px];
+	}
+}
+
+.Title {
+	@apply text-5xl font-black mb-[60px];
+
+	font-family: Druk Text Wide Cyr, sans-serif;
+
+	@media (max-width: 1386px) {
+		@apply text-[30px] mb-[40px];
+	}
+
+	@media (max-width: 768px) {
+		@apply mb-[20px];
+	}
+
+	@media (max-width: 480px) {
+		@apply mb-[30px];
+	}
+}

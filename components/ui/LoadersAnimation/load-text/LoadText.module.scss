@@ -1,0 +1,7 @@
+.LoadText {
+	@apply text-center text-5xl select-none;
+
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}

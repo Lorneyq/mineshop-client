@@ -1,0 +1,15 @@
+.ProductSearch {
+	// @apply;
+}
+
+.ShowBox {
+	@apply flex items-center;
+}
+
+.Buttons {
+	@apply relative flex items-center z-[41];
+}
+
+.CollapseButton {
+	@apply absolute -right-[36px] -top-[7px] text-white text-[30px] leading-none;
+}

@@ -1,0 +1,15 @@
+.ContactsSection {
+	@apply flex justify-between my-20;
+
+	@media (max-width: 1200px) {
+		@apply my-10;
+	}
+
+	@media (max-width: 840px) {
+		@apply flex-col items-center justify-between gap-[25px];
+	}
+
+	@media (max-width: 580px) {
+		@apply mt-5 gap-[15px];
+	}
+}

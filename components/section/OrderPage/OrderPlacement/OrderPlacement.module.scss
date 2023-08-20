@@ -1,0 +1,15 @@
+.OrderPlacement {
+	@apply flex justify-between items-center gap-10 mb-[130px];
+
+	@media (max-width: 1200px) {
+		@apply gap-[20px] mb-[80px];
+	}
+
+	@media (max-width: 960px) {
+		@apply gap-[10px] mb-[40px];
+	}
+
+	@media (max-width: 768px) {
+		@apply flex-col;
+	}
+}

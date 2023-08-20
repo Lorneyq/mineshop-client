@@ -1,0 +1,46 @@
+.AboutUs {
+	@apply mt-[110px];
+
+	@media (max-width: 1200px) {
+		@apply mt-[60px];
+	}
+
+	@media (max-width: 768px) {
+		@apply mt-[30px];
+	}
+}
+
+.ContentBox {
+	@apply flex justify-between items-center gap-[60px];
+
+	@media (max-width: 1200px) {
+		@apply flex-col gap-[30px];
+	}
+
+	@media (max-width: 580px) {
+		@apply flex-col gap-[15px];
+	}
+}
+
+.InfoBox {
+	@apply max-w-[605px];
+	p {
+		@apply mb-[35px];
+	}
+
+	@media (max-width: 768px) {
+		@apply px-10;
+
+		p {
+			@apply mb-[15px];
+		}
+	}
+
+	@media (max-width: 580px) {
+		@apply px-5;
+
+		p {
+			@apply mb-[10px];
+		}
+	}
+}

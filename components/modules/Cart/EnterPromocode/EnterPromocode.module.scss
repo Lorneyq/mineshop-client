@@ -1,0 +1,9 @@
+.EnterPromocode {
+	@apply gap-0;
+
+	> input {
+		&::placeholder {
+			@apply text-[#A1A1A1];
+		}
+	}
+}

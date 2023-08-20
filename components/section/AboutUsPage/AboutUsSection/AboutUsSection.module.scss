@@ -1,0 +1,51 @@
+.AboutUsSection {
+	@apply mt-[40px] mb-[130px];
+
+	@media (max-width: 768px) {
+		@apply mt-[20px] mb-[70px];
+	}
+
+	@media (max-width: 580px) {
+		@apply mt-[10px] mb-[40px];
+	}
+}
+
+.AboutUsText {
+	@apply text-xl;
+
+	p {
+		@apply mb-[20px] last:mb-0;
+
+		> a {
+			@apply font-bold;
+		}
+	}
+
+	@media (max-width: 768px) {
+		@apply text-base;
+
+		p {
+			@apply mb-[10px] last:mb-0;
+		}
+	}
+}
+
+.AboutUsLogo {
+	@apply mt-10;
+
+	img {
+		@apply w-full;
+	}
+
+	span {
+		@apply block text-center text-2xl text-gray-400 mt-0;
+	}
+
+	@media (max-width: 768px) {
+		@apply mt-[5px];
+
+		span {
+			@apply text-lg;
+		}
+	}
+}

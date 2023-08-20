@@ -1,0 +1,48 @@
+.HeaderMenuButton {
+	@apply flex flex-col items-end gap-[10px];
+
+	span {
+		@apply h-[2px] bg-white;
+
+		&:nth-child(1) {
+			@apply w-12;
+		}
+		&:nth-child(2) {
+			@apply w-8;
+		}
+	}
+}
+
+.HeaderMobileMenu {
+	@apply fixed top-0 right-0 h-[100dvh] w-[70vw] bg-white;
+
+	box-shadow: -5px -1px 4px rgba(0, 0, 0, 0.25);
+
+	.MenuHead {
+		@apply p-5;
+	}
+
+	.MenuMain {
+		@apply p-5;
+	}
+
+	.navbar {
+		ul {
+			@apply flex flex-col gap-5 text-2xl;
+		}
+	}
+
+	.buttons {
+		@apply bg-black w-full h-[50px] flex justify-center items-center gap-[45px];
+
+		@media (max-width: 768px) {
+			@apply gap-[30px];
+		}
+	}
+}
+
+.HeaderMenuInner {
+	@apply flex flex-col justify-between;
+
+	height: calc(100% - 34px);
+}

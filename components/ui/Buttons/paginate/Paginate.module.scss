@@ -1,0 +1,48 @@
+.Paginate {
+	@apply relative mt-[95px] flex gap-[20px] justify-center items-center select-none;
+
+	@media (max-width: 1200px) {
+		@apply mt-[40px];
+	}
+
+	@media (max-width: 768px) {
+		@apply gap-[10px];
+	}
+
+	@media (max-width: 580px) {
+		@apply mt-[20px];
+	}
+}
+
+.PageItem {
+	@apply w-[45px] h-[45px] bg-black text-white;
+
+	@media (max-width: 768px) {
+		@apply w-[30px] h-[30px];
+	}
+}
+
+.PageLink {
+	@apply text-xl leading-none w-full h-full flex justify-center items-center;
+}
+
+.PreviousPage,
+.NextPage {
+	@apply text-3xl leading-none;
+
+	@media (max-width: 768px) {
+		@apply text-xl;
+	}
+}
+
+.Disabled {
+	@apply text-gray-400 cursor-default;
+}
+
+// .Break {
+// 	@apply;
+// }
+
+// .BreakLink {
+// 	@apply;
+// }

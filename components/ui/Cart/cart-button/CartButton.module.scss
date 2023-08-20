@@ -1,0 +1,25 @@
+.CartButtonBox {
+	@apply relative h-7;
+}
+
+.IconBox {
+	@apply relative;
+
+	@media (max-width: 1024px) {
+		svg {
+			@apply w-7 h-7;
+		}
+	}
+}
+
+.TotalItem {
+	@apply absolute text-white text-left text-[13px] w-[38px] top-[-10px] right-[-38px];
+
+	@media (max-width: 1024px) {
+		@apply top-[-11px] right-[-35px];
+	}
+
+	@media (max-width: 768px) {
+		@apply text-[10px];
+	}
+}

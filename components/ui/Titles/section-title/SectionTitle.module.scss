@@ -1,0 +1,15 @@
+.SectionTitle {
+	@apply mb-10 text-lg font-light uppercase;
+
+	@media (max-width: 1200px) {
+		@apply ml-10;
+	}
+
+	@media (max-width: 768px) {
+		@apply mb-[30px];
+	}
+
+	@media (max-width: 580px) {
+		@apply mb-[10px] ml-5;
+	}
+}

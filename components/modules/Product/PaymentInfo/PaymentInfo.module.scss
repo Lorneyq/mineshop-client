@@ -1,0 +1,7 @@
+.PaymentImages {
+	@apply grid grid-cols-5 gap-[10px];
+}
+
+.PaymentImage {
+	@apply m-auto;
+}

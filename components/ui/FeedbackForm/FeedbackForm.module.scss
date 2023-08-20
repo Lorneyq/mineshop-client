@@ -1,0 +1,25 @@
+.Label {
+	@apply relative flex flex-col;
+}
+
+.Input {
+	@apply border border-black px-[10px] py-[5px] w-full h-10;
+}
+
+.Textarea {
+	@apply border border-black px-[10px] py-[5px] w-full min-h-[150px];
+}
+
+.ErrorAlert {
+	@apply absolute -bottom-6 text-red-500;
+}
+
+.Button {
+	@apply mt-2 bg-white border border-black px-6 py-2 w-fit ml-auto;
+
+	transition: all 0.5s;
+
+	&:hover {
+		@apply bg-black text-white;
+	}
+}

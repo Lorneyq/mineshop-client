@@ -1,0 +1,189 @@
+.OrderItem {
+	@apply flex relative py-[36px] border-b border-black first:border-t last:border-0;
+
+	@media (max-width: 1386px) {
+		@apply py-[20px];
+	}
+
+	@media (max-width: 580px) {
+		@apply py-[10px];
+	}
+}
+
+.ItemImage {
+	@apply h-[170px] w-full max-w-[170px];
+
+	img {
+		@apply h-[170px] mx-auto;
+	}
+
+	@media (max-width: 1386px) {
+		@apply h-[130px] max-w-[130px];
+		img {
+			@apply h-[130px];
+		}
+	}
+
+	@media (max-width: 1200px) {
+		@apply h-[110px] max-w-[110px];
+		img {
+			@apply h-[110px];
+		}
+	}
+
+	@media (max-width: 960px) {
+		@apply h-[80px] max-w-[80px];
+		img {
+			@apply h-[80px];
+		}
+	}
+
+	@media (max-width: 420px) {
+		@apply h-[60px] max-w-[60px];
+		img {
+			@apply h-[60px];
+		}
+	}
+}
+
+.ItemMainInfo {
+	@apply flex flex-col justify-between gap-[10px] text-left pl-[30px] w-full;
+
+	@media (max-width: 1386px) {
+		@apply pl-[20px];
+	}
+}
+
+.ItemName {
+	@apply text-[25px];
+
+	@media (max-width: 1386px) {
+		@apply text-[20px];
+	}
+
+	@media (max-width: 960px) {
+		@apply text-[16px];
+	}
+
+	@media (max-width: 580px) {
+		@apply text-[15px];
+	}
+
+	@media (max-width: 420px) {
+		@apply text-[12px];
+	}
+}
+
+.ItemPrice {
+	@apply flex items-center justify-center text-4xl font-bold text-right mt-auto;
+
+	@media (max-width: 1386px) {
+		@apply text-[24px] leading-none;
+	}
+
+	@media (max-width: 1200px) {
+		@apply text-[20px];
+	}
+
+	@media (max-width: 580px) {
+		@apply text-[16px];
+	}
+}
+
+.RemoveButton {
+	top: 15px !important;
+
+	svg {
+		@apply w-[15px] h-[15px];
+	}
+
+	@media (max-width: 768px) {
+		top: 10px !important;
+
+		svg {
+			@apply w-[10px] h-[10px];
+		}
+	}
+
+	@media (max-width: 420px) {
+		top: 8px !important;
+
+		svg {
+			@apply w-[8px] h-[8px];
+		}
+	}
+}
+
+.ItemFeatures {
+	@apply flex gap-[30px];
+
+	@media (max-width: 1386px) {
+		@apply gap-[15px];
+	}
+
+	@media (max-width: 960px) {
+		@apply flex-col gap-[10px];
+	}
+
+	@media (max-width: 768px) {
+		@apply flex-row;
+	}
+}
+
+.ItemColor,
+.ItemSize,
+.ItemQuantity {
+	@apply flex flex-col gap-[11px];
+
+	@media (max-width: 1386px) {
+		@apply gap-[6px];
+	}
+
+	@media (max-width: 960px) {
+		@apply gap-[3px];
+	}
+}
+
+.ItemColorLabel,
+.ItemSizeLabel,
+.ItemQuantityLabel {
+	@apply text-[14px] font-light;
+
+	@media (max-width: 1386px) {
+		@apply text-[12px];
+	}
+
+	@media (max-width: 960px) {
+		@apply text-[10px];
+	}
+
+	@media (max-width: 580px) {
+		@apply text-[8px];
+	}
+}
+
+.ItemColorSquare,
+.ItemSizeSquare,
+.ItemQuantitySquare {
+	@apply border border-black w-[40px] h-[40px] text-sm select-none;
+
+	@media (max-width: 1386px) {
+		@apply w-[30px] h-[30px] text-xs;
+	}
+
+	@media (max-width: 960px) {
+		@apply w-[20px] h-[20px] text-[10px];
+	}
+
+	@media (max-width: 580px) {
+		@apply w-[15px] h-[15px] text-[8px];
+	}
+}
+
+.ItemSizeSquare {
+	@apply flex justify-center items-center;
+}
+
+.ItemQuantitySquare {
+	@apply flex justify-center items-center;
+}

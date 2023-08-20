@@ -1,0 +1,15 @@
+.ConfirmationInfo {
+	@apply grid grid-cols-2 gap-y-[50px] gap-x-[45px] mb-[50px];
+
+	@media (max-width: 1386px) {
+		@apply gap-[30px] mb-[30px];
+	}
+
+	@media (max-width: 960px) {
+		@apply text-sm;
+	}
+
+	@media (max-width: 420px) {
+		@apply gap-[10px] text-[8px];
+	}
+}

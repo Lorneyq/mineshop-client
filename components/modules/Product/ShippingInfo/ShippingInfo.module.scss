@@ -1,0 +1,21 @@
+.ShippingInfo {
+	p {
+		@apply text-lg leading-normal font-light mb-5;
+	}
+
+	@media (max-width: 1386px) {
+		p {
+			@apply text-base mb-[10px];
+		}
+	}
+
+	@media (max-width: 1200px) {
+		p {
+			@apply text-[14px] mb-[5px];
+		}
+	}
+}
+
+.ShippingInfoItem {
+	@apply font-bold;
+}

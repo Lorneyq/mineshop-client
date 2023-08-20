@@ -1,0 +1,99 @@
+.CatalogCard {
+	@apply border border-black px-[35px] pt-[35px] pb-[75px];
+
+	&:nth-child(1) {
+		grid-column: 1/5;
+	}
+	&:nth-child(2) {
+		grid-column: 5/10;
+	}
+	&:nth-child(3) {
+		grid-column: 1/6;
+	}
+	&:nth-child(4) {
+		grid-column: 6/10;
+	}
+	&:nth-child(5) {
+		grid-column: 1/10;
+	}
+
+	@media (max-width: 1386px) {
+		grid-column: 1 / 10 !important;
+	}
+
+	@media (max-width: 768px) {
+		@apply p-5;
+	}
+
+	@media (max-width: 580px) {
+		@apply p-[10px];
+	}
+}
+
+.MainInfo {
+	@apply relative;
+}
+
+.CatalogImage {
+	@apply w-full h-[400px];
+
+	@media (max-width: 768px) {
+		@apply h-[300px];
+	}
+
+	@media (max-width: 580px) {
+		@apply h-[190px];
+	}
+
+	@media (max-width: 380px) {
+		@apply h-[150px];
+	}
+}
+
+.Title {
+	@apply text-[50px] font-black uppercase text-center w-full overflow-hidden overflow-ellipsis whitespace-nowrap;
+	font-family: Druk Text Wide Cyr, sans-serif;
+
+	position: absolute;
+	left: 50%;
+	bottom: -33px;
+	transform: translateX(-50%);
+
+	@media (max-width: 1200px) {
+		@apply text-[40px];
+
+		bottom: -55px;
+	}
+
+	@media (max-width: 768px) {
+		@apply text-[32px];
+	}
+
+	@media (max-width: 580px) {
+		@apply text-[24px];
+
+		bottom: -40px;
+	}
+
+	@media (max-width: 380px) {
+		@apply text-[20px];
+
+		bottom: -30px;
+	}
+}
+
+.Subcategory {
+	@apply flex justify-center gap-[55px] text-2xl pt-[55px];
+
+	@media (max-width: 768px) {
+		@apply gap-5 pt-[60px] text-[16px];
+	}
+
+	@media (max-width: 580px) {
+		@apply pt-[40px] text-[12px];
+	}
+
+	@media (max-width: 380px) {
+		@apply pt-[30px] text-[12px];
+	}
+}

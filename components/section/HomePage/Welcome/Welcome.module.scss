@@ -1,0 +1,108 @@
+.Welcome {
+	@apply mt-[123px];
+
+	@media (max-width: 1200px) {
+		@apply mt-[70px];
+	}
+
+	@media (max-width: 580px) {
+		@apply mt-10;
+	}
+}
+
+.WelcomeTop {
+	@apply flex justify-between items-center relative;
+}
+
+.WelcomeImage {
+	@apply w-[763px] h-[521px];
+
+	@media (max-width: 1200px) {
+		@apply w-[60%] h-[60%];
+	}
+}
+
+.InfoBox {
+	@apply flex flex-col items-start absolute max-w-[772px] right-0 top-0;
+
+	@media (max-width: 1386px) {
+		@apply max-w-[600px];
+	}
+
+	@media (max-width: 1200px) {
+		@apply items-end max-w-[420px];
+	}
+
+	@media (max-width: 768px) {
+		@apply max-w-[320px];
+	}
+
+	@media (max-width: 580px) {
+		@apply max-w-[190px];
+	}
+}
+
+.Title {
+	@apply mb-[35px] text-6xl font-black uppercase;
+	font-family: Druk Text Wide Cyr, sans-serif;
+
+	@media (max-width: 1200px) {
+		@apply text-[40px] mb-5;
+	}
+
+	@media (max-width: 768px) {
+		@apply text-[32px] mb-[10px];
+	}
+
+	@media (max-width: 580px) {
+		@apply text-xl leading-5 mb-[5px];
+	}
+}
+
+.Subtitle {
+	@apply text-xl font-light ml-[105px] max-w-[500px];
+
+	@media (max-width: 1200px) {
+		@apply text-base ml-0 mr-[50px] max-w-[210px];
+	}
+
+	@media (max-width: 768px) {
+		@apply text-sm max-w-[185px];
+	}
+
+	@media (max-width: 580px) {
+		@apply text-[10px] leading-3 max-w-[140px] mr-[10px];
+	}
+}
+
+.LinkButton {
+	@apply mt-[85px] ml-[105px];
+
+	@media (max-width: 1200px) {
+		@apply mt-[30px] ml-0 mr-[50px];
+	}
+
+	@media (max-width: 768px) {
+		@apply mt-[15px];
+	}
+
+	@media (max-width: 580px) {
+		@apply mt-[10px] mr-[10px];
+	}
+}
+
+.Image {
+	@apply select-none;
+}
+
+.WelcomeMarquee {
+	@apply py-5 border-y border-black;
+
+	@media (max-width: 768px) {
+		@apply py-[10px];
+	}
+
+	@media (max-width: 580px) {
+		@apply py-[6px];
+	}
+}

@@ -1,0 +1,61 @@
+.SendingInput {
+	@apply flex flex-col gap-[15px] relative;
+
+	> label {
+		@apply text-[13px] max-w-[300px] text-white;
+	}
+
+	> input {
+		@apply w-[300px] h-[30px] border-b border-b-white outline-none bg-transparent outline text-white pb-[10px] pr-[95px];
+
+		&::placeholder {
+			@apply text-white/20;
+		}
+	}
+
+	> button {
+		@apply absolute right-0 bottom-4;
+	}
+
+	@media (max-width: 960px) {
+		> input {
+			@apply w-[240px] pb-[5px] pr-[60px];
+		}
+
+		> button {
+			@apply bottom-3;
+
+			svg {
+				@apply w-[50px];
+			}
+		}
+	}
+
+	@media (max-width: 768px) {
+		> input {
+			@apply w-[200px] pb-[2px] pr-[50px];
+		}
+
+		> button {
+			@apply bottom-[10px];
+
+			svg {
+				@apply w-[40px];
+			}
+		}
+	}
+
+	@media (max-width: 580px) {
+		> input {
+			@apply w-[150px] pb-[2px] pr-[40px] text-[12px];
+		}
+
+		> button {
+			@apply bottom-[10px];
+
+			svg {
+				@apply w-[30px];
+			}
+		}
+	}
+}

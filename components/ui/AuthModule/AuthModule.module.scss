@@ -1,0 +1,57 @@
+.Label {
+	@apply relative flex flex-col;
+}
+
+.Input {
+	@apply border border-black px-[10px] py-[5px] w-[330px] outline-none;
+
+	@media (max-width: 1200px) {
+		@apply w-[300px];
+	}
+
+	@media (max-width: 580px) {
+		@apply w-[260px] py-[4px] px-[7px];
+	}
+
+	@media (max-width: 420px) {
+		@apply w-[220px] py-[4px] px-[7px];
+	}
+}
+
+.PasswordInput {
+	@apply pr-[50px];
+
+	@media (max-width: 1200px) {
+		@apply pr-[35px];
+	}
+
+	@media (max-width: 580px) {
+		@apply pr-[40px];
+	}
+}
+
+.ErrorAlert {
+	@apply absolute -bottom-6 text-red-500;
+
+	@media (max-width: 1200px) {
+		@apply absolute text-[14px] -bottom-[15px] leading-none text-red-500;
+	}
+
+	@media (max-width: 768px) {
+		@apply -bottom-[13px] text-[12px];
+	}
+}
+
+.Button {
+	@apply mt-2 bg-white border border-black px-6 py-1;
+
+	transition: all 0.5s;
+
+	&:hover {
+		@apply bg-black text-white;
+	}
+
+	@media (max-width: 1200px) {
+		@apply mt-[5px];
+	}
+}

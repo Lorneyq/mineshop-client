@@ -1,0 +1,23 @@
+.PageTitle {
+	@apply text-5xl font-bold;
+
+	@media (max-width: 768px) {
+		@apply text-[24px];
+	}
+
+	@media (max-width: 580px) {
+		@apply text-[18px];
+	}
+}
+
+.CenterTitle {
+	@apply text-center text-[4rem] leading-none;
+
+	@media (max-width: 768px) {
+		@apply text-[48px];
+	}
+
+	@media (max-width: 580px) {
+		@apply text-[36px];
+	}
+}

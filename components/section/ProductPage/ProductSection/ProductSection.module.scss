@@ -1,0 +1,11 @@
+.ProductSection {
+	@apply flex justify-between gap-[30px] pt-[50px] mb-[80px];
+
+	@media (max-width: 1376px) {
+		@apply pt-[40px] mb-[50px];
+	}
+
+	@media (max-width: 768px) {
+		@apply flex-col pt-[30px] mb-[40px];
+	}
+}

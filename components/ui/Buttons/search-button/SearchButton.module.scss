@@ -1,0 +1,11 @@
+.SearchButton {
+	@apply z-30;
+
+	svg {
+		@apply w-5 h-5;
+	}
+
+	@media (max-width: 1024px) {
+		@apply ml-4;
+	}
+}

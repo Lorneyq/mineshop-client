@@ -1,0 +1,23 @@
+.ProductImages {
+	@apply flex relative h-[625px] pb-[70px];
+
+	@media (max-width: 1386px) {
+		@apply h-[480px];
+	}
+
+	@media (max-width: 1200px) {
+		@apply h-[380px] pb-[50px];
+	}
+
+	@media (max-width: 960px) {
+		@apply h-[300px];
+	}
+}
+
+.ImagePagination {
+	@apply text-2xl;
+	position: absolute;
+	bottom: -50px;
+	transform: translateX(-50%);
+	left: calc(50% - 40px);
+}

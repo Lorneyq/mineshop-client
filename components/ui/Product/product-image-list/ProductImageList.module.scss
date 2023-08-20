@@ -1,0 +1,29 @@
+.ProductImageList {
+	@apply pl-5;
+
+	@media (max-width: 1386px) {
+		@apply pl-[10px];
+	}
+}
+
+.ImageSlider {
+	height: 545px !important;
+	padding-top: 2px !important;
+	overflow: hidden !important;
+
+	@media (max-width: 1376px) {
+		height: 410px !important;
+	}
+
+	@media (max-width: 1200px) {
+		height: 310px !important;
+	}
+
+	@media (max-width: 768) {
+		height: 250px !important;
+	}
+}
+
+.ImageSlide {
+	height: 100px !important;
+}

@@ -1,0 +1,23 @@
+.CloseButton {
+	@apply absolute right-[25px] top-[25px];
+
+	svg {
+		@apply w-[24px] h-[24px];
+	}
+
+	@media (max-width: 1200px) {
+		@apply right-[20px] top-[20px];
+
+		svg {
+			@apply w-[16px] h-[16px];
+		}
+	}
+
+	@media (max-width: 580px) {
+		@apply right-[15px] top-[15px];
+
+		svg {
+			@apply w-[12px] h-[12px];
+		}
+	}
+}

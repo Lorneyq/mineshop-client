@@ -1,0 +1,75 @@
+.ContactDetails {
+	@apply flex flex-col gap-[10px] w-fit p-8 border border-black;
+
+	> img {
+		@apply mx-auto w-[300px] h-[300px];
+	}
+
+	@media (max-width: 1200px) {
+		@apply p-[20px];
+
+		> img {
+			@apply w-[200px] h-[200px];
+		}
+	}
+
+	@media (max-width: 840px) {
+		@apply flex-row;
+	}
+
+	@media (max-width: 768px) {
+		@apply p-[10px];
+
+		> img {
+			@apply w-[100px] h-[100px];
+		}
+	}
+
+	@media (max-width: 420px) {
+		@apply p-[5px];
+
+		> img {
+			@apply w-[70px] h-[70px];
+		}
+	}
+}
+
+.Title {
+	@apply text-4xl border-b border-gray-300 mb-5;
+
+	@media (max-width: 1200px) {
+		@apply text-[24px] mb-[15px];
+	}
+
+	@media (max-width: 768px) {
+		@apply text-[20px] mb-[10px];
+	}
+
+	@media (max-width: 580px) {
+		@apply text-[18px];
+	}
+
+	@media (max-width: 420px) {
+		@apply text-[16px] mb-[5px];
+	}
+}
+
+.InfoBox {
+	@apply flex flex-col gap-[15px] text-3xl font-normal uppercase mt-6;
+
+	@media (max-width: 1200px) {
+		@apply text-[24px] gap-[5px] leading-normal mt-[15px];
+	}
+
+	@media (max-width: 768px) {
+		@apply text-[18px] gap-[4px] mt-[5px];
+	}
+
+	@media (max-width: 580px) {
+		@apply text-[16px] gap-[3px];
+	}
+
+	@media (max-width: 420px) {
+		@apply text-[14px] gap-[2px];
+	}
+}

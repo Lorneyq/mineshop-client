@@ -1,0 +1,9 @@
+.Stars {
+	@apply flex gap-1;
+
+	@media (max-width: 768px) {
+		svg {
+			@apply w-[12px] h-[12px];
+		}
+	}
+}
