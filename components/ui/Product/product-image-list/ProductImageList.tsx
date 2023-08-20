@@ -1,3 +1,4 @@
+import { useMediaQuery } from '@/hooks/useMediaQuery';
 import { IProductImageListProps } from '@/types/product';
 import 'swiper/css';
 import { Keyboard, Mousewheel } from 'swiper/modules';
@@ -9,6 +10,9 @@ export default function ProductImageList({
 	images,
 	setActiveIndex,
 }: IProductImageListProps) {
+	const isMobile1386 = useMediaQuery(1386);
+	const isMobile960 = useMediaQuery(960);
+
 	return (
 		<ul className={styles.ProductImageList}>
 			<Swiper
@@ -18,7 +22,7 @@ export default function ProductImageList({
 					setActiveIndex(swiper.clickedIndex);
 				}}
 				direction="vertical"
-				slidesPerView={5}
+				slidesPerView={isMobile960 ? 4 : isMobile1386 ? 5 : 6}
 				slidesPerGroup={1}
 				spaceBetween={10}
 				allowTouchMove

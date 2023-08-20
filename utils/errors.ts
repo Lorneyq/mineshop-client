@@ -7,7 +7,7 @@ export const showAuthError = (error: unknown) => {
 
 	if (axiosError.response) {
 		if (axiosError.response.status === HTTPStatus.UNAUTHORIZED) {
-			toast.error('Invalid username or password');
+			toast.error('Invalid email or password');
 			return;
 		}
 	}

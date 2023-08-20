@@ -10,7 +10,7 @@ export default function FavoritesPage() {
 
 	if (allowAccess) {
 		return (
-			<div className="container">
+			<div className='container'>
 				<Breadcrumbs
 					items={[
 						{
@@ -29,7 +29,7 @@ export default function FavoritesPage() {
 		);
 	} else {
 		return (
-			<div className="container">
+			<div className='container'>
 				<WarningMessage />
 			</div>
 		);

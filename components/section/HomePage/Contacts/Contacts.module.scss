@@ -17,16 +17,8 @@
 .InfoBox {
 	@apply flex flex-col gap-[64px] text-5xl font-bold uppercase;
 
-	@media (max-width: 1200px) {
-		@apply gap-10;
-	}
-
-	@media (max-width: 768px) {
-		@apply text-[30px] gap-[30px];
-	}
-
-	@media (max-width: 480px) {
-		@apply text-[22px] gap-[20px];
+	@media (max-width: 1024px) {
+		@apply gap-[3vw] text-[7vw] max-w-[95vw] overflow-hidden text-ellipsis whitespace-nowrap;
 	}
 }
 

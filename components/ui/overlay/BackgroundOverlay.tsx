@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import scrollLock from 'scroll-lock';
+import scrollLock, { addFillGapSelector } from 'scroll-lock';
 
 interface overlayProps {
 	onClick?: () => void;
@@ -8,6 +8,7 @@ interface overlayProps {
 export default function BackgroundOverlay({ onClick }: overlayProps) {
 	useEffect(() => {
 		scrollLock.disablePageScroll();
+		addFillGapSelector('header');
 		return () => {
 			scrollLock.enablePageScroll();
 		};

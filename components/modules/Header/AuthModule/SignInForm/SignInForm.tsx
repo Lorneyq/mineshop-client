@@ -14,7 +14,6 @@ export default function SignInForm({ setShow }: IAuthModuleProps) {
 		handleSubmit,
 		resetField,
 		control,
-		watch,
 	} = useForm<IInputs>();
 
 	const onSubmit = async (data: IInputs) => {

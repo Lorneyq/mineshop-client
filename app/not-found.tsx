@@ -14,7 +14,7 @@ export default function NotFound() {
 		<div className={styles.NotFound}>
 			<Image
 				src={NotFoundImage}
-				alt="Page Not Found"
+				alt='Page Not Found'
 				width={0}
 				height={0}
 				draggable={false}

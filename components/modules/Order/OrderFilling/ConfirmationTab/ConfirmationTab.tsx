@@ -1,11 +1,9 @@
 'use client';
 import StandardButton from '@/components/ui/Buttons/standard-button/StandardButton';
 import { $user } from '@/context/user';
-import { OrderInputs } from '@/types/orderForm';
 import { useStore } from 'effector-react';
 import { MutableRefObject, useRef } from 'react';
 import { useCookies } from 'react-cookie';
-import { useForm } from 'react-hook-form';
 import mainStyles from '../OrderFilling.module.scss';
 import styles from './ConfirmationTab.module.scss';
 
@@ -14,12 +12,6 @@ export default function ConfirmationTab({
 }: {
 	moveToTab: (arg0: number) => void;
 }) {
-	const {
-		register,
-		handleSubmit,
-		control,
-		formState: { errors },
-	} = useForm<OrderInputs>();
 	const formRef = useRef() as MutableRefObject<HTMLFormElement>;
 	const [cookies, setCookie] = useCookies();
 	const user = useStore($user);
@@ -44,7 +36,11 @@ export default function ConfirmationTab({
 							{cookies.formData?.lastName || ''}
 						</li>
 						<li>{cookies.formData?.email || user.email || ''}</li>
-						<li>{`+${cookies.formData?.phone}` || ''}</li>
+						<li>
+							{(cookies.formData?.phone.length >= 2 &&
+								`+${cookies.formData?.phone}`) ||
+								''}
+						</li>
 					</ul>
 				</div>
 				<div className={styles.ConfirmationInfoBox}>

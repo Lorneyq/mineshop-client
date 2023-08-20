@@ -68,7 +68,7 @@
 		@apply px-2 border border-black select-none;
 	}
 
-	@media (max-width: 1376px) {
+	@media (max-width: 1386px) {
 		@apply gap-[15px] mb-[15px];
 	}
 }
@@ -97,6 +97,16 @@
 	}
 }
 
+.AddToCartButton {
+	@media (max-width: 1200px) {
+		@apply text-base min-w-[160px] min-h-[44px];
+	}
+
+	@media (max-width: 768px) {
+		@apply text-[14px] min-w-[120px] h-[32px];
+	}
+}
+
 .ItemCounter {
 	@apply min-w-[189px] h-[49px] bg-black text-white flex justify-center items-center text-2xl select-none;
 
@@ -113,11 +123,7 @@
 	}
 
 	@media (max-width: 768px) {
-		@apply text-xs min-w-[120px] h-[32px];
-	}
-
-	@media (max-width: 580px) {
-		@apply text-[10px] min-w-[90px] h-[25px];
+		@apply text-[14px] min-w-[120px] h-[32px];
 	}
 }
 

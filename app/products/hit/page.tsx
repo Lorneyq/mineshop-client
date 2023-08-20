@@ -31,7 +31,7 @@ export default function HitProductsPage() {
 	const products = hitItems.rows || [];
 
 	return (
-		<div className="container">
+		<div className='container'>
 			<Breadcrumbs
 				items={[
 					{
@@ -49,8 +49,8 @@ export default function HitProductsPage() {
 				]}
 			/>
 			<ProductFilters
-				title="Hit products"
-				colorTitle="#000000"
+				title='Hit products'
+				colorTitle='#000000'
 				totalProducts={hitItems.count}
 				isPromotional={true}
 			/>

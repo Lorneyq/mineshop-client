@@ -41,7 +41,7 @@ export default function CategoryPage({ params: { slug } }: Props) {
 	};
 
 	return (
-		<div className="container">
+		<div className='container'>
 			<Breadcrumbs
 				items={[
 					{

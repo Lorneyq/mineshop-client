@@ -19,16 +19,24 @@ export default function SignUpForm({ switchForm }: { switchForm: () => void }) {
 
 	const onSubmit = async (data: IInputs) => {
 		try {
-			await signUpFx({
+			const response = await signUpFx({
 				url: '/users/signup',
 				username: data.name,
 				password: data.password,
 				email: data.email,
 			});
-			resetField('email');
-			resetField('name');
-			resetField('password');
-			switchForm();
+			if ('warningReason' in response) {
+				if (response.warningReason === 'email') {
+					resetField('email');
+				} else if (response.warningReason === 'username') {
+					resetField('name');
+				}
+			} else {
+				resetField('email');
+				resetField('name');
+				resetField('password');
+				switchForm();
+			}
 		} catch (error) {
 			showAuthError(error);
 		}

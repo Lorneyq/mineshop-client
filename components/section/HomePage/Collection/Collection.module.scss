@@ -15,7 +15,7 @@
 }
 
 .List {
-	@apply flex flex-col gap-[50px] text-[60px] font-black uppercase text-center;
+	@apply flex flex-col max-w-[95vw] overflow-hidden gap-[50px] text-[60px] font-black uppercase text-center;
 	font-family: Druk Text Wide Cyr, sans-serif;
 
 	.green {
@@ -24,20 +24,20 @@
 	}
 
 	@media (max-width: 1200px) {
-		@apply gap-[30px] text-[45px];
+		@apply gap-[2vw] text-[5vw];
+	}
+
+	@media (max-width: 960px) {
+		@apply text-[6vw];
 	}
 
 	@media (max-width: 768px) {
-		@apply gap-[15px] text-4xl;
-
 		.green {
 			text-shadow: -4px 3px 0px #000;
 		}
 	}
 
 	@media (max-width: 580px) {
-		@apply gap-[10px] text-[20px];
-
 		.green {
 			text-shadow: -3px 2px 0px #000;
 		}

@@ -54,9 +54,11 @@ export default function SearchInput({
 			isClearable={true}
 			onInputChange={onInputChange}
 			options={options}
-			onMenuClose={() => setSave(inputValue)}
+			onMenuClose={() => setSave(inputValue ?? '')}
 			onFocus={() => {
-				setInputValue(inputSave);
+				if (setInputValue) {
+					setInputValue(inputSave);
+				}
 			}}
 			blurInputOnSelect
 		/>

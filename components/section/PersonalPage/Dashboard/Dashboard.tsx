@@ -33,7 +33,7 @@ export default function Dashboard() {
 							<div className={styles.UserInfo}>
 								<div
 									className={styles.UsernameBox}
-									title={`Your id: ${user.userId}`}
+									title={`Your id: ${user.id}`}
 								>
 									Welcome,{' '}
 									<span className={styles.Username}>{user.username}</span>

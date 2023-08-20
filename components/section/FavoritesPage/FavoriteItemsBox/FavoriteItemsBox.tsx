@@ -19,9 +19,7 @@ export default function FavoriteItemsBox() {
 
 	const loadFavoriteItems = async () => {
 		try {
-			const favoriteItems = await getFavoriteItemsFx(
-				`/favorites/${user.userId}`,
-			);
+			const favoriteItems = await getFavoriteItemsFx(`/favorites/${user.id}`);
 
 			setFavorites(favoriteItems);
 		} catch (error) {

@@ -19,7 +19,7 @@ export default function ProductPage() {
 
 	useEffect(() => {
 		const parsedQuery = queryString.parse(
-			location.pathname.split('product/')[1],
+			location.pathname.split('product/')[1]
 		);
 		const productId = parseInt(Object.keys(parsedQuery)[0]);
 
@@ -43,7 +43,7 @@ export default function ProductPage() {
 	return (
 		<>
 			<title>{`${product.name} | Mineshop`}</title>
-			<div className="container">
+			<div className='container'>
 				<Breadcrumbs
 					items={[
 						{

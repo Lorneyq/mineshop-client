@@ -1,8 +1,9 @@
 import { HTTPStatus } from '@/constans';
 import { AxiosError } from 'axios';
 import { createEffect } from 'effector-next';
+import jwt_decode from 'jwt-decode';
 import { toast } from 'react-toastify';
-import { ISignInFx, ISignUpFx } from './../types/auth';
+import { ISignInFx, ISignUpFx, IUser } from './../types/auth';
 import api from './axiosClient';
 
 export const signUpFx = createEffect(
@@ -11,13 +12,13 @@ export const signUpFx = createEffect(
 
 		if (data.warningMessage) {
 			toast.warning(data.warningMessage);
-			return;
+			return { warningReason: data.warningReason };
 		}
 
 		toast.success('Registration was successful');
 
-		return data;
-	},
+		return { data };
+	}
 );
 
 export const signInFx = createEffect(
@@ -31,15 +32,18 @@ export const signInFx = createEffect(
 
 		toast.success('The input is accomplished');
 
+		localStorage.setItem('auth_connection', data.token);
 		return data;
-	},
+	}
 );
 
-export const checkUserAuthFx = createEffect(async (url: string) => {
+export const checkUserAuthFx = createEffect(async (token: string | any) => {
 	try {
-		const { data } = await api.get(url);
+		const data = jwt_decode(token);
 
-		return data;
+		const { email, id, username } = data as IUser;
+
+		return { email, id, username };
 	} catch (error) {
 		const axiosError = error as AxiosError;
 
@@ -49,7 +53,7 @@ export const checkUserAuthFx = createEffect(async (url: string) => {
 			}
 		}
 
-		toast.error((error as Error).message);
+		// toast.error((error as Error).message);
 	}
 });
 

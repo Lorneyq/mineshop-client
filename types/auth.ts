@@ -4,6 +4,7 @@ export interface IInputs {
 	name: string;
 	email: string;
 	password: string;
+	warningReason?: string;
 }
 
 export interface IButton {
@@ -35,6 +36,6 @@ export interface ISignInFx {
 
 export interface IUser {
 	username: string;
-	userId: number | string;
+	id: number | string;
 	email: string;
 }

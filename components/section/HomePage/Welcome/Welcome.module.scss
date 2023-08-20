@@ -26,57 +26,41 @@
 	@apply flex flex-col items-start absolute max-w-[772px] right-0 top-0;
 
 	@media (max-width: 1386px) {
-		@apply max-w-[600px];
+		@apply max-w-[50vw];
 	}
 
 	@media (max-width: 1200px) {
-		@apply items-end max-w-[420px];
+		@apply items-end;
 	}
 
-	@media (max-width: 768px) {
-		@apply max-w-[320px];
-	}
+	// @media (max-width: 768px) {
+	// 	@apply max-w-[320px];
+	// }
 
-	@media (max-width: 580px) {
-		@apply max-w-[190px];
-	}
+	// @media (max-width: 580px) {
+	// 	@apply max-w-[190px];
+	// }
 }
 
 .Title {
 	@apply mb-[35px] text-6xl font-black uppercase;
 	font-family: Druk Text Wide Cyr, sans-serif;
 
-	@media (max-width: 1200px) {
-		@apply text-[40px] mb-5;
-	}
-
-	@media (max-width: 768px) {
-		@apply text-[32px] mb-[10px];
-	}
-
-	@media (max-width: 580px) {
-		@apply text-xl leading-5 mb-[5px];
+	@media (max-width: 1386px) {
+		@apply text-[5.1vw] mb-[3vw] leading-[1.1];
 	}
 }
 
 .Subtitle {
-	@apply text-xl font-light ml-[105px] max-w-[500px];
+	@apply text-xl font-light ml-[150px] max-w-[380px];
 
-	@media (max-width: 1200px) {
-		@apply text-base ml-0 mr-[50px] max-w-[210px];
-	}
-
-	@media (max-width: 768px) {
-		@apply text-sm max-w-[185px];
-	}
-
-	@media (max-width: 580px) {
-		@apply text-[10px] leading-3 max-w-[140px] mr-[10px];
+	@media (max-width: 1386px) {
+		@apply max-w-[33vw] ml-[10vw] max-h-[6vw] overflow-hidden text-[2.3vw] leading-none;
 	}
 }
 
 .LinkButton {
-	@apply mt-[85px] ml-[105px];
+	@apply mt-[40px] ml-[100px];
 
 	@media (max-width: 1200px) {
 		@apply mt-[30px] ml-0 mr-[50px];

@@ -20,9 +20,20 @@
 		}
 	}
 
-	@media (max-width: 600px) {
+	@media (max-width: 768px) {
 		svg {
-			@apply w-[20px] h-[20px];
+			path {
+				transition: none !important;
+			}
+		}
+		&:hover {
+			svg {
+				path {
+					&:nth-child(2) {
+						fill: transparent !important;
+					}
+				}
+			}
 		}
 	}
 }

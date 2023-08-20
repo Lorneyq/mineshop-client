@@ -1,12 +1,11 @@
 'use client';
 import Breadcrumbs from '@/components/modules/Breadcrumbs/Breadcrumbs';
-import ContactDetails from '@/components/section/ContactsPage/ContactDetails/ContactDetails';
-import FeedbackForm from '@/components/section/ContactsPage/FeedbackForm/FeedbackForm';
+import ContactsSection from '@/components/section/ContactsPage/ContactsSection/ContactsSection';
 import PageTitle from '@/components/ui/Titles/page-title/PageTitle';
 
 export default function ContactsPage() {
 	return (
-		<div className="container">
+		<div className='container'>
 			<Breadcrumbs
 				items={[
 					{
@@ -20,10 +19,7 @@ export default function ContactsPage() {
 				]}
 			/>
 			<PageTitle>Contacts</PageTitle>
-			<div className="flex justify-between mb-20 mt-20">
-				<ContactDetails />
-				<FeedbackForm />
-			</div>
+			<ContactsSection />
 		</div>
 	);
 }

@@ -31,7 +31,7 @@ export default function NewProductsPage() {
 	const products = newItems.rows || [];
 
 	return (
-		<div className="container">
+		<div className='container'>
 			<Breadcrumbs
 				items={[
 					{
@@ -49,8 +49,8 @@ export default function NewProductsPage() {
 				]}
 			/>
 			<ProductFilters
-				title="New products"
-				colorTitle="#5A9A30"
+				title='New products'
+				colorTitle='#5A9A30'
 				totalProducts={newItems.count}
 				isPromotional={true}
 			/>

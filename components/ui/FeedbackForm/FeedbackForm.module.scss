@@ -4,14 +4,26 @@
 
 .Input {
 	@apply border border-black px-[10px] py-[5px] w-full h-10;
+
+	@media (max-width: 580px) {
+		@apply py-[4px] px-[7px];
+	}
 }
 
 .Textarea {
 	@apply border border-black px-[10px] py-[5px] w-full min-h-[150px];
+
+	@media (max-width: 580px) {
+		@apply py-[4px] px-[7px] min-h-[100px];
+	}
 }
 
 .ErrorAlert {
 	@apply absolute -bottom-6 text-red-500;
+
+	@media (max-width: 580px) {
+		@apply -bottom-5;
+	}
 }
 
 .Button {
@@ -21,5 +33,11 @@
 
 	&:hover {
 		@apply bg-black text-white;
+	}
+
+	@media (max-width: 768px) {
+		&:hover {
+			@apply bg-[initial] text-[initinal];
+		}
 	}
 }

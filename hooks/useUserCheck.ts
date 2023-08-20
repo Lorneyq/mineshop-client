@@ -17,7 +17,8 @@ const useUserCheck = (isLockedPage = false) => {
 	}, []);
 
 	const checkUser = async () => {
-		const user = await checkUserAuthFx('/users/login-check');
+		const token = localStorage.getItem('auth_connection');
+		const user = await checkUserAuthFx(token);
 
 		if (isLockedPage) {
 			if (user) {

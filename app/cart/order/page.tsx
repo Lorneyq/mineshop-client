@@ -4,7 +4,7 @@ import OrderPlacement from '@/components/section/OrderPage/OrderPlacement/OrderP
 
 export default function OrderRegistrationPage() {
 	return (
-		<div className="container">
+		<div className='container'>
 			<Breadcrumbs
 				items={[
 					{

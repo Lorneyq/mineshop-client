@@ -64,7 +64,10 @@ export default function ProductInfo({ product }: { product: IProduct }) {
 							}
 						})
 					) : (
-						<StandardButton onClick={handleAddToCart}>
+						<StandardButton
+							onClick={handleAddToCart}
+							className={styles.AddToCartButton}
+						>
 							add to cart
 						</StandardButton>
 					)}

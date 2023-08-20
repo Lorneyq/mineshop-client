@@ -1,3 +1,4 @@
+import { useMediaQuery } from '@/hooks/useMediaQuery';
 import { IFeedbackInput } from '@/types/feedbackForm';
 import { Controller } from 'react-hook-form';
 import PhoneInput from 'react-phone-input-2';
@@ -9,6 +10,8 @@ export default function PhoneNumberInput({
 	errors,
 	control,
 }: IFeedbackInput) {
+	const isMobile580 = useMediaQuery(580);
+	const isMobile1200 = useMediaQuery(1200);
 	return (
 		<label className={styles.Label}>
 			<span>Phone*</span>
@@ -25,17 +28,21 @@ export default function PhoneNumberInput({
 						inputStyle={{
 							border: '1px solid black',
 							borderRadius: '0px',
-							padding: '8px',
+							padding: '0.5rem',
 							width: '100%',
-							paddingLeft: '40px',
-							fontSize: '16px',
+							paddingLeft: isMobile1200 ? '22px' : '40px',
+							fontSize: '1rem',
+							height: isMobile580 ? '30px' : '35px',
 						}}
 						dropdownStyle={{
 							borderRadius: '0px',
 						}}
 						buttonStyle={{
 							borderRadius: '0px',
-							backgroundColor: 'transparent',
+							backgroundColor: 'white',
+							borderTop: '1px solid white',
+							borderLeft: '1px solid white',
+							borderBottom: '1px solid white',
 							borderRight: '1px solid black',
 						}}
 					/>

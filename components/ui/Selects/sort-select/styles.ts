@@ -24,6 +24,7 @@ export const controlStyles = (
 	boxShadow: 'none',
 	justifyContent: 'flex-start',
 	maxWidth: '125px',
+	width: '6rem',
 });
 
 export const selectStyles: StylesConfig<
@@ -51,7 +52,7 @@ export const selectStyles: StylesConfig<
 		padding: 0,
 		color: 'black',
 		'&:hover': {
-			color: 'black',
+			color: useMediaQuery(480) ? 'initial' : 'black',
 		},
 	}),
 	menuList: () => ({}),

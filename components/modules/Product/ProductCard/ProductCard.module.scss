@@ -97,11 +97,11 @@
 		}
 
 		.price {
-			@apply text-sm;
+			@apply text-[16px];
 		}
 
 		.productName {
-			@apply text-xs max-w-[200px];
+			@apply text-[100%] max-w-[200px];
 		}
 	}
 }

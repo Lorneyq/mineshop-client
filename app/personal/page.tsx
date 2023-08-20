@@ -7,7 +7,7 @@ export default function PersonalPage() {
 
 	if (allowAccess) {
 		return (
-			<div className="container">
+			<div className='container'>
 				<Dashboard />
 			</div>
 		);

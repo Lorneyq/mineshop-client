@@ -1,5 +1,5 @@
 .CartItem {
-	@apply grid gap-0 py-[18px] border-b border-black;
+	@apply grid gap-0 relative py-[18px] border-b border-black;
 
 	grid-template-columns: repeat(12, 1fr);
 

@@ -10,11 +10,11 @@
 	}
 
 	@media (max-width: 580px) {
-		@apply w-[260px] py-[4px] px-[7px];
+		@apply w-[260px];
 	}
 
 	@media (max-width: 420px) {
-		@apply w-[220px] py-[4px] px-[7px];
+		@apply w-[220px];
 	}
 }
 
@@ -53,5 +53,11 @@
 
 	@media (max-width: 1200px) {
 		@apply mt-[5px];
+	}
+
+	@media (max-width: 768px) {
+		&:hover {
+			@apply bg-[initial] text-[initinal];
+		}
 	}
 }

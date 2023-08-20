@@ -26,6 +26,12 @@
 	&:hover {
 		@apply bg-black text-white;
 	}
+
+	@media (max-width: 768px) {
+		&:hover {
+			@apply bg-[initial] text-[initinal];
+		}
+	}
 }
 
 .PhoneDropdownButton {

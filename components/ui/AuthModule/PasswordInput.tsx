@@ -20,6 +20,7 @@ export default function PasswordInput({
 			<Controller
 				name="password"
 				control={control}
+				defaultValue=""
 				rules={{
 					required: 'Please enter a password.',
 					minLength: 6,
@@ -30,6 +31,11 @@ export default function PasswordInput({
 						<input
 							type={showPassword ? 'text' : 'password'}
 							{...field}
+							{...register('password', {
+								required: 'Please enter a password.',
+								minLength: 6,
+								maxLength: 32,
+							})}
 							onChange={e => field.onChange(e.target.value)}
 							maxLength={32}
 							className={`${styles.Input} ${styles.PasswordInput}`}

@@ -5,7 +5,7 @@ import PageTitle from '@/components/ui/Titles/page-title/PageTitle';
 
 export default function CartPage() {
 	return (
-		<div className="container">
+		<div className='container'>
 			<Breadcrumbs
 				items={[
 					{
