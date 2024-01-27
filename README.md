@@ -48,4 +48,4 @@ That's it, the whole project is up and running. Congratulations!🎉🥳
 
 👉[Live demo](http://mineshop.vercel.app/)
 
-![Mineshop demo](https://lorneyq.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmineshop.3af2407d.jpg&w=1920&q=75)
+![Mineshop demo](https://api-lorneyq.online/media/projects/mineshop.jpg)
