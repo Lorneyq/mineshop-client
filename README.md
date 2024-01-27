@@ -9,8 +9,9 @@ commercial version, the details are thought out.
 
 ## Stack used
 
-» Next.js (Language: TypeScript) » Sass / SCSS » Libraries: tailwind, swiper,
-axios, effector, query-string, next-nprogress-bar, lottie-web
+» Next.js (Language: TypeScript)
+» Sass / SCSS
+» Libraries: tailwind, swiper, axios, effector, query-string, next-nprogress-bar, lottie-web
 
 ## Project launch
 
